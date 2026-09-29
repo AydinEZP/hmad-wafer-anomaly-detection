@@ -1,0 +1,31 @@
+seed: 1405
+
+data:
+  datasetDirectory: data/Wafer
+  trainPath: data/Wafer/Wafer_TRAIN.ts
+  testPath: data/Wafer/Wafer_TEST.ts
+
+  normalSourceLabel: "1"
+  anomalySourceLabel: "-1"
+
+  sensitivityFractions: [0.01, 0.05, 0.10, 0.20]
+  sensitivityNormalCount: 1000
+  heatmapNormalCount: 200
+  heatmapAnomalyCount: 200
+
+ocsvm:
+  representations: [flattened, global_summary, window_summary]
+  nuValues: [0.01, 0.05, 0.10, 0.20]
+  primaryRepresentation: window_summary
+  primaryNu: 0.10
+  kernel: rbf
+  gamma: scale
+  windowCount: 5
+
+hmad:
+  nStates: 2
+  maxIterations: 10
+  initialSelfTransition: 0.90
+  convergenceThreshold: 0.01
+  varianceFloor: 1.0e-6
+  transitionSmoothing: 1.0e-3

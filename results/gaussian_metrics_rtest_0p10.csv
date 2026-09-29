@@ -1,0 +1,6 @@
+model,representation,evaluation,targetRTest,achievedRTest,nNormal,nAnomaly,nu,seed,rocAuc,precision,recall,f1Score
+HMAD,joint_features_viterbi,gaussian_sensitivity,0.1,0.1,900,100,0.1,1502,1.0,0.34965034965034963,1.0,0.5181347150259067
+HMAD all-one ablation,joint_features_all_one,gaussian_sensitivity,0.1,0.1,900,100,0.1,1502,1.0,0.34965034965034963,1.0,0.5181347150259067
+OC-SVM flattened,flattened,gaussian_sensitivity,0.1,0.1,900,100,0.1,1502,1.0,0.1937984496124031,1.0,0.3246753246753247
+OC-SVM global_summary,global_summary,gaussian_sensitivity,0.1,0.1,900,100,0.1,1502,1.0,0.411522633744856,1.0,0.5830903790087464
+OC-SVM window_summary,window_summary,gaussian_sensitivity,0.1,0.1,900,100,0.1,1502,1.0,0.2564102564102564,1.0,0.40816326530612246

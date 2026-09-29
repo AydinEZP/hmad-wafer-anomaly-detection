@@ -1,0 +1,37 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+
+# Experiment products are reproducible and should remain local.
+outputs/
+/figures/
+/tables/
+generated_numbers.tex
+
+# External datasets are intentionally not redistributed.
+data/Wafer/*
+!data/Wafer/README.md
+data/legacy_synthetic/
+
+# Local editor files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# LaTeX build products.
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc
+*.lof
+*.lot
